@@ -15,6 +15,40 @@ Card
     - collected into a Deck
     - collected into a Hand for each Player and a Hand for the Dealer
 ```
+Deck 
+  Responsibilities
+    - have a set of 52 cards
+  Collaborators
+    - shuffled by dealer
+    - has cards
+
+Dealer
+  Responsibilities
+    - shuffle the deck
+    - Deal the hand
+    - Ask player their next move
+    - Keep track of amount of bet
+    - Keep track of value of hand
+    - Keep track of player's money
+  Collaborators
+    - Deck of Cards
+    - Collaborate with Hand
+    - Player
+
+Hand
+  Responsibilities
+    - Hold x amount of cards for players
+    - Track value of hand
+  Collaborators
+    - Player, Dealer, and Card
+
+Player 
+  Responsibilities
+    - Amount of money left
+    - Let dealer know hit/stay
+    - Keep track of their hand
+  Collaborators
+    - Dealer, hand
 
 Given your notes, talk about how you might translate these into classes. You do not have to write the code for each method, but do sketch out the classes and methods.
 
